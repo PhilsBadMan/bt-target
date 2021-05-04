@@ -79,3 +79,24 @@ Citizen.CreateThread(function()
     })
 end)
 ```
+
+PhilsBadMan
+
+Added ability to pass arguments with events. In this example I have the model and object being passed with the event.
+
+```lua
+options = {
+            {
+                event = "banking:atm",
+                icon = "fas fa-piggy-bank",
+                label = "Use ATM",
+                args = true,
+            },
+            {
+                event = "banking:hack",
+                icon = "fas fa-piggy-bank",
+                label = "Hack ATM",
+                args = false,
+            },
+        },
+```
